@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  locations:
+    build:
+      context: ..
+      dockerfile: ./build/locations/Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - locationLunatics
+    command: bash -c "/locations.bin"
+
+networks:
+  locationLunatics:
+    driver: bridge
