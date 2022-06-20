@@ -15,5 +15,5 @@ type Location struct {
 	MaxDurationInMinutes string  `json:"max_duration_in_minutes" binding:"omitempty"`
 	MinimumAmount        string  `json:"minimum_amount" binding:"omitempty"`
 	IncrementsInMinutes  string  `json:"increments_in_minutes" binding:"omitempty"`
-	ZoneGroupID          int32   `json:"zone_group_id" binding:"omitempty"`
+	ZoneGroupID          int     `json:"zone_group_id" binding:"omitempty"`
 }
