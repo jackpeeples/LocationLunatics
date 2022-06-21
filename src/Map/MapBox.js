@@ -46,15 +46,18 @@ const MapBox = () => {
             ],
         });
     };
-    useEffect(() => {
-        //setData(geoJson);
-        fetch("http://localhost:8080/v1/locations")
+    
+    const fetchData = () => {
+        fetch(URL)
         .then(response => {
             console.log("RESPONSE", response)
             return response;
         })
         .then(response => response.json())
         .then(data => setData(data))
+    }
+    useEffect(() => {
+        fetchData();
     }, []);
     
     return (
@@ -88,7 +91,7 @@ const MapBox = () => {
                         latitude={Number(popupInfo.geometry.coordinates[1])}
                         onClose={() => {
                             setPopupInfo(null);
-                            setData(geoJson);
+                            fetchData();
                         }}
                     >
                         <div>
