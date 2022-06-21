@@ -29,7 +29,7 @@ const MapBox = () => {
                             onPinClickSorting(area);
                         }}
                     >
-                        <PinControl/>
+                        <PinControl area={area}/>
                     </Marker>);
             });
         }, [data]
@@ -86,8 +86,8 @@ const MapBox = () => {
                     >
                         <div>
                             {popupInfo.properties.place}, {popupInfo.properties.login} |{' '}
+                            <a href='http://localhost:3000/manage/policies/rates/1552'><button>EDIT</button></a>
                         </div>
-                        {/*<img width="100%" src={popupInfo?.image} alt={''}/>*/}
                     </Popup>
                 )}
             </Map>
