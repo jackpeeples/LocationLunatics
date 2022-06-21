@@ -81,7 +81,10 @@ const MapBox = () => {
                         anchor="top"
                         longitude={Number(popupInfo.geometry.coordinates[0])}
                         latitude={Number(popupInfo.geometry.coordinates[1])}
-                        onClose={() => setPopupInfo(null)}
+                        onClose={() => {
+                            setPopupInfo(null);
+                            setData(geoJson);
+                        }}
                     >
                         <div>
                             {popupInfo.properties.place}, {popupInfo.properties.login} |{' '}
