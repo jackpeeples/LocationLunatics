@@ -1,6 +1,7 @@
 package models
 
 type Location struct {
+	Name                 string  `json:"name" binding:"omitempty"`
 	PMZoneCode           string  `json:"pm_zone_code" binding:"omitempty"`
 	MainStreet           string  `json:"main_street" binding:"omitempty"`
 	CrossStreet          string  `json:"cross_street" binding:"omitempty"`

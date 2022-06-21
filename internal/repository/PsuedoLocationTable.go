@@ -5,6 +5,7 @@ import "LocationLunatics/internal/models"
 func GetAllLocationData() []models.Location {
 	return []models.Location{
 		{
+			Name:                 "Location 1",
 			PMZoneCode:           "108045",
 			Lat:                  -84.377881,
 			Long:                 33.839611,
@@ -22,6 +23,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 2",
 			PMZoneCode:           "108067",
 			Lat:                  -84.380220,
 			Long:                 33.782563,
@@ -39,6 +41,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 3",
 			PMZoneCode:           "404101",
 			Lat:                  -84.387803,
 			Long:                 33.748822,
@@ -56,6 +59,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 4",
 			PMZoneCode:           "714014",
 			Lat:                  -84.388214,
 			Long:                 33.747991,
@@ -73,6 +77,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 5",
 			PMZoneCode:           "714015",
 			Lat:                  -84.387221,
 			Long:                 33.748861,
@@ -90,6 +95,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 6",
 			PMZoneCode:           "714017",
 			Lat:                  -84.388993,
 			Long:                 33.748901,
@@ -107,6 +113,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 7",
 			PMZoneCode:           "714018",
 			Lat:                  -84.388621,
 			Long:                 33.748955,
@@ -124,6 +131,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 8",
 			PMZoneCode:           "714019",
 			Lat:                  -84.388582,
 			Long:                 33.749042,
@@ -141,6 +149,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 9",
 			PMZoneCode:           "714036",
 			Lat:                  -84.389075,
 			Long:                 33.790205,
@@ -158,6 +167,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 10",
 			PMZoneCode:           "714051",
 			Lat:                  -84.388011,
 			Long:                 33.749214,
@@ -175,6 +185,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 11",
 			PMZoneCode:           "714055",
 			Lat:                  -84.383177,
 			Long:                 33.776766,
@@ -192,6 +203,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 12",
 			PMZoneCode:           "714057",
 			Lat:                  -84.388011,
 			Long:                 33.749214,
@@ -209,6 +221,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          2,
 		},
 		{
+			Name:                 "Location 13",
 			PMZoneCode:           "714070",
 			Lat:                  -84.387803,
 			Long:                 33.748822,
@@ -226,6 +239,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          3,
 		},
 		{
+			Name:                 "Location 14",
 			PMZoneCode:           "714086",
 			Lat:                  -84.387803,
 			Long:                 33.748822,
@@ -243,6 +257,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          3,
 		},
 		{
+			Name:                 "Location 15",
 			PMZoneCode:           "714800",
 			Lat:                  -84.387835,
 			Long:                 33.748772,
@@ -260,6 +275,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          3,
 		},
 		{
+			Name:                 "Location 16",
 			PMZoneCode:           "714057",
 			Lat:                  -84.388002,
 			Long:                 33.748999,
@@ -277,6 +293,7 @@ func GetAllLocationData() []models.Location {
 			ZoneGroupID:          3,
 		},
 		{
+			Name:                 "Location 17",
 			PMZoneCode:           "714058",
 			Lat:                  -84.388122,
 			Long:                 33.749167,

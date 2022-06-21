@@ -13,8 +13,20 @@ type LocationController struct {
 func NewLocationController() (lc *LocationController) {
 	return &LocationController{}
 }
-func (lc *LocationController) GetLocations(bb models.BoundingBox) (locations []models.Location, err error) {
-	return repository.GetAllLocationData(), nil
+
+func (lc *LocationController) GetLocations(bb models.BoundingBox, groupId string, isGrouped bool) (webLocations []models.WebLocation, err error) {
+	locations := []models.Location{}
+	if isGrouped {
+		locations, _ = lc.GetGroupLocations(groupId)
+	} else {
+		locations = repository.GetAllLocationData()
+	}
+
+	for _, loc := range locations {
+		webLoc := models.ConvertLocationToWeb(loc)
+		webLocations = append(webLocations, webLoc)
+	}
+	return webLocations, nil
 }
 
 func (lc *LocationController) GetGroupLocations(groupId string) (locations []models.Location, err error) {
