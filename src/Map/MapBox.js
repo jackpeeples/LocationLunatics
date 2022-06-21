@@ -46,30 +46,12 @@ const MapBox = () => {
             ],
         });
     };
-    
     useEffect(() => {
-        
-        fetch(URL, {
-            mode: "no-cors" // <----------------
-        })
-        .then((res)=>{
-            return res.text();
-        })
-        .then((data)=>{
-            console.log(data);
-            return new Promise((resolve, reject)=>{
-                resolve(data ? JSON.parse(data) : {})
-            })
-        })
+        setData(geoJson);
     }, []);
     
     return (
         <Fragment>
-            <button onClick={() => {
-                setData(geoJson);
-            }}>SET DATA
-            </button>
-            
             <Map
                 style={{
                     width: '100%',
