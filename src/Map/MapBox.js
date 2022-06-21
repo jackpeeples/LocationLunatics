@@ -95,8 +95,37 @@ const MapBox = () => {
                         }}
                     >
                         <div>
-                            {popupInfo.properties.place}, {popupInfo.properties.login} |{' '}
-                            <a href='http://localhost:3000/manage/policies/rates/1552'><button>EDIT</button></a>
+                        <div>
+              <b style={{ fontWeight: 900 }}>Main Street:</b>{" "}
+              {popupInfo.properties["main_street"]},{" "}
+            </div>
+            <div>
+              <b style={{ fontWeight: 900 }}>Cross Street:</b>{" "}
+              {popupInfo.properties["cross_street"]}
+            </div>
+            <div>
+              <b style={{ fontWeight: 900 }}>Lattitude:</b>{" "}
+              {popupInfo.properties["lat"]},{" "}
+              <div>
+                <b style={{ fontWeight: 900 }}>Longitude:</b>{" "}
+                {popupInfo.properties["lon"]}
+              </div>
+              <div>
+                <b style={{ fontWeight: 900 }}>Space Count:</b>{" "}
+                {popupInfo.properties["space_count"]},{" "}
+              </div>
+              <div>
+                <b style={{ fontWeight: 900 }}>Meter Type:</b>{" "}
+                {popupInfo.properties["meter_type"]},{" "}
+              </div>
+              <div>
+                <b style={{ fontWeight: 900 }}>Enforment Type:</b>{" "}
+                {popupInfo.properties["enforcement_type"]} |{" "}
+              </div>
+            </div>
+            <a href="http://localhost:3000/manage/policies/rates/1552">
+              <button>Edit Rate</button>
+            </a>
                         </div>
                     </Popup>
                 )}
