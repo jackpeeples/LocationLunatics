@@ -4,6 +4,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { DEFAULT_ZOOM, TOKEN } from './tools/constants';
 import PinControl from './PinControl';
 import geoJson from './tools/geoJson.json'; //TEMP need to get data from API
+import _ from 'lodash';
 
 const MapBox = () => {
     const [data, setData] = useState({
@@ -24,6 +25,7 @@ const MapBox = () => {
                         onClick={e => {
                             e.originalEvent.stopPropagation();
                             setPopupInfo(area);
+                            onPinClickSorting(area);
                         }}
                     >
                         <PinControl/>
@@ -31,6 +33,19 @@ const MapBox = () => {
             });
         }, [data]
     );
+    
+    const onPinClickSorting = (area) => {
+        let filtered = _.filter(data.features, (item) => {
+            return item.properties['zone-group-id'] === area.properties['zone-group-id'];
+        });
+        
+        setData({
+            'type': 'FeatureCollection',
+            'features': [
+                ...filtered
+            ],
+        });
+    };
     
     return (
         <Fragment>
