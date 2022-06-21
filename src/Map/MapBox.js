@@ -47,7 +47,14 @@ const MapBox = () => {
         });
     };
     useEffect(() => {
-        setData(geoJson);
+        //setData(geoJson);
+        fetch("http://localhost:8080/v1/locations")
+        .then(response => {
+            console.log("RESPONSE", response)
+            return response;
+        })
+        .then(response => response.json())
+        .then(data => setData(data))
     }, []);
     
     return (

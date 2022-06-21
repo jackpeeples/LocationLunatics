@@ -4,6 +4,7 @@ import (
 	"LocationLunatics/internal/controller"
 	"LocationLunatics/internal/models"
 	"fmt"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"os"
@@ -32,6 +33,14 @@ func (lr *LocationsRouter) Bootstrap() {
 func (lr *LocationsRouter) RouterBootstrap() *gin.Engine {
 	os.Setenv("PORT", "8080")
 	router := gin.New()
+
+	router.Use(cors.New(cors.Config{
+		AllowOrigins:     []string{"http://localhost:3000"},
+		AllowMethods:     []string{"GET"},
+		AllowHeaders:     []string{"Origin"},
+		ExposeHeaders:    []string{"Content-Length"},
+		AllowCredentials: true,
+	}))
 
 	v1 := router.Group("/v1")
 	{
