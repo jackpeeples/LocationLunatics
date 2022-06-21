@@ -50,27 +50,18 @@ func (lr *LocationsRouter) GetLocations(c *gin.Context) {
 	groupId := c.Query("groupId")
 
 	lc := controller.NewLocationController()
-
+	isGroupId := false
 	if groupId != "" {
-		fmt.Println("CORRECT")
-		zones, err := lc.GetGroupLocations(groupId)
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{
-				"error": err.Error(),
-			})
-		}
-		c.JSON(http.StatusOK, gin.H{
-			"locations": zones,
-		})
-		return
+		isGroupId = true
 	}
 	bb, _ := models.NewBoundingBox(lat1, lng1, lat2, lng2)
 
-	zones, err := lc.GetLocations(bb)
+	zones, err := lc.GetLocations(bb, groupId, isGroupId)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
 			"error": err.Error(),
 		})
+		return
 	}
 
 	c.JSON(http.StatusOK, gin.H{
