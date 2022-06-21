@@ -1,60 +1,480 @@
 {
-    "type":"FeatureCollection",
-    "features":[
+    "locations": [
         {
-            "type":"Feature",
-            "properties":{
-                "place":"LOCATION 1",
-                "login":"espresso",
-                "lat":"38.1",
-                "lon":"-77.0",
-                "zone-group-id": "1",
-                "pm-zone-code": "12345"
+            "type": "Feature",
+            "properties": {
+                "place": "Location 1",
+                "login": "Business",
+                "pm_zone_code": "108045",
+                "lat": "-84.377881",
+                "lon": "33.839611",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -77.0,
-                    38.1
+                    -84.377881,
+                    33.839611
                 ]
             }
         },
         {
-            "type":"Feature",
-            "properties":{
-                "place":"LOCATION 2",
-                "login":"espresso",
-                "lat":"38.4",
-                "lon":"-77.1",
-                "zone-group-id": "2",
-                "pm-zone-code": "54321"
+            "type": "Feature",
+            "properties": {
+                "place": "Location 2",
+                "login": "Business",
+                "pm_zone_code": "108067",
+                "lat": "-84.380220",
+                "lon": "33.782563",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -77.1,
-                    38.4
+                    -84.38022,
+                    33.782563
                 ]
             }
         },
         {
-            "type":"Feature",
-            "properties":{
-                "place":"LOCATION 3",
-                "login":"espresso",
-                "lat":"38.41",
-                "lon":"-77.19",
-                "zone-group-id": "2",
-                "pm-zone-code": "54321"
+            "type": "Feature",
+            "properties": {
+                "place": "Location 3",
+                "login": "Business",
+                "pm_zone_code": "404101",
+                "lat": "-84.387803",
+                "lon": "33.748822",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -77.19,
-                    38.41
+                    -84.387803,
+                    33.748822
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 4",
+                "login": "Business",
+                "pm_zone_code": "714014",
+                "lat": "-84.388214",
+                "lon": "33.747991",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.388214,
+                    33.747991
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 5",
+                "login": "Business",
+                "pm_zone_code": "714015",
+                "lat": "-84.387221",
+                "lon": "33.748861",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.387221,
+                    33.748861
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 6",
+                "login": "Business",
+                "pm_zone_code": "714017",
+                "lat": "-84.388993",
+                "lon": "33.748901",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.388993,
+                    33.748901
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 7",
+                "login": "Business",
+                "pm_zone_code": "714018",
+                "lat": "-84.388621",
+                "lon": "33.748955",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.388621,
+                    33.748955
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 8",
+                "login": "Business",
+                "pm_zone_code": "714019",
+                "lat": "-84.388582",
+                "lon": "33.749042",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.388582,
+                    33.749042
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 9",
+                "login": "Business",
+                "pm_zone_code": "714036",
+                "lat": "-84.389075",
+                "lon": "33.790205",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.389075,
+                    33.790205
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 10",
+                "login": "Business",
+                "pm_zone_code": "714051",
+                "lat": "-84.388011",
+                "lon": "33.749214",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.388011,
+                    33.749214
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 11",
+                "login": "Business",
+                "pm_zone_code": "714055",
+                "lat": "-84.383177",
+                "lon": "33.776766",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.383177,
+                    33.776766
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 12",
+                "login": "Business",
+                "pm_zone_code": "714057",
+                "lat": "-84.388011",
+                "lon": "33.749214",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 2
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.388011,
+                    33.749214
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 13",
+                "login": "Business",
+                "pm_zone_code": "714070",
+                "lat": "-84.387803",
+                "lon": "33.748822",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 3
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.387803,
+                    33.748822
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 14",
+                "login": "Business",
+                "pm_zone_code": "714086",
+                "lat": "-84.387803",
+                "lon": "33.748822",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 3
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.387803,
+                    33.748822
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 15",
+                "login": "Business",
+                "pm_zone_code": "714800",
+                "lat": "-84.387835",
+                "lon": "33.748772",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 3
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.387835,
+                    33.748772
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 16",
+                "login": "Business",
+                "pm_zone_code": "714057",
+                "lat": "-84.388002",
+                "lon": "33.748999",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 3
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.388002,
+                    33.748999
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "Location 17",
+                "login": "Business",
+                "pm_zone_code": "714058",
+                "lat": "-84.388122",
+                "lon": "33.749167",
+                "main_street": "ABC Street",
+                "cross_street": "XYZ Ave",
+                "cross_street_two": "XYZ Boulevard",
+                "space_count": "100",
+                "meter_type": "MSM",
+                "enforcement_type": "Pay by plate",
+                "hourly_rate": "$2.00",
+                "max_duration_in_minutes": "180",
+                "minimum_amount": "30",
+                "increments_in_minutes": "30",
+                "zone_group_id": 3
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.388122,
+                    33.749167
                 ]
             }
         }
-
     ]
 }

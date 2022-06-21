@@ -1,21 +1,22 @@
-import React, { Fragment, useMemo, useState } from 'react';
+import React, { Fragment, useEffect, useMemo, useState } from 'react';
 import Map, { FullscreenControl, GeolocateControl, Marker, NavigationControl, Popup, ScaleControl } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { DEFAULT_ZOOM, TOKEN } from './tools/constants';
+import { DEFAULT_ZOOM, TOKEN, URL } from './tools/constants';
 import PinControl from './PinControl';
 import geoJson from './tools/geoJson.json'; //TEMP need to get data from API
 import _ from 'lodash';
 
+
 const MapBox = () => {
     const [data, setData] = useState({
         'type': 'FeatureCollection',
-        'features': [],
+        'locations': [],
     });
     const [popupInfo, setPopupInfo] = useState(null);
     
     const pins = useMemo(
         () => {
-            return data.features.map((area, index) => {
+            return data?.locations?.map((area, index) => {
                 return (
                     <Marker
                         key={`marker-${index}`}
@@ -35,17 +36,32 @@ const MapBox = () => {
     );
     
     const onPinClickSorting = (area) => {
-        let filtered = _.filter(data.features, (item) => {
-            return item.properties['zone-group-id'] === area.properties['zone-group-id'];
+        let filtered = _.filter(data.locations, (item) => {
+            return item.properties['zone_group_id'] === area.properties['zone_group_id'];
         });
-        
         setData({
             'type': 'FeatureCollection',
-            'features': [
+            'locations': [
                 ...filtered
             ],
         });
     };
+    
+    useEffect(() => {
+        
+        fetch(URL, {
+            mode: "no-cors" // <----------------
+        })
+        .then((res)=>{
+            return res.text();
+        })
+        .then((data)=>{
+            console.log(data);
+            return new Promise((resolve, reject)=>{
+                resolve(data ? JSON.parse(data) : {})
+            })
+        })
+    }, []);
     
     return (
         <Fragment>
@@ -89,7 +105,7 @@ const MapBox = () => {
                         <div>
                             {popupInfo.properties.place}, {popupInfo.properties.login} |{' '}
                         </div>
-                        <img width="100%" src={popupInfo?.image} alt={''}/>
+                        {/*<img width="100%" src={popupInfo?.image} alt={''}/>*/}
                     </Popup>
                 )}
             </Map>
