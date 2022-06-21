@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import MapboxDraw from '@mapbox/mapbox-gl-draw';
 import mapboxgl from 'mapbox-gl';
-import { updateToolTip } from './tools/helper';
+// import { updateToolTip } from './tools/helper';
 import { DEFAULT_ZOOM, MAP_OFFSET, TOKEN } from './tools/constants';
 
 const geojson = {
@@ -169,9 +169,9 @@ const Map = () => {
                 onMouseOut={() => {
                     if (tooltip) tooltip.style.visibility = 'hidden';
                 }}
-                onMouseMove={e =>
-                    updateToolTip(tooltipRef, e.clientX, e.clientY - 53, true)
-                }
+                // onMouseMove={e =>
+                //     // updateToolTip(tooltipRef, e.clientX, e.clientY - 53, true)
+                // }
                 ref={mapContainer}
             />
         </Fragment>

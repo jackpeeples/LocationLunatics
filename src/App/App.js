@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
-import Map from '../Map/Map';
+// import Map from '../Map/Map';
+import MapBox from '../Map/MapBox';
 
 const App = () => {
     return (
         <Fragment>
-            <Map/>
+            {/*<Map/>*/}
+            <MapBox/>
         </Fragment>
     );
 };
